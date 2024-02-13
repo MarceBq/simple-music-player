@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="music-player">
+        <div class="music-player-container">
+            
+            <div class="first-music-container">   
+                <img  id="first-music" class="music-img" src="./assets/cover-1.png" alt="first song image">
+                
+                <div class="description-music-container">
+                    <h2>Lost in the City Ligths</h2>
+                    <p>Cosmo Sheldrake</p>
+                </div>
+            </div>
+            
+            <div class="second-music-container">
+                <img src="./assets/cover-2.png" class="music-img" alt="secong song image">
+
+                <div class="description-music-container">
+                    <h2>Forest Lullaby</h2>
+                    <p>Lesim</p>
+                </div>
+            </div>
+                
+            <audio></audio>
+
+                <div class="progress-music-container">
+                    
+                    <div class="time-container">
+                        <p class="current-time">0:00</p>
+                        <p class="duration">0:00</p>
+                    </div>
+                    
+                    <div class="progress-bar-container">
+                        <input type="range" class="progress-bar" value="0" />
+                    </div>
+                    
+                </div>
+                
+             
+
+            <div class="interactive-block-container">
+                <button type="button" class="reverse">
+                    <img src="/assets/Stop_and_play_fill-1.svg" alt="reverse button">
+                </button>
+
+                <div class="controler-buttons">
+                    
+                    <button type="button" class="play">
+                      <img src="/assets/Play_fill.svg" alt="play button">
+                    </button>
+                    
+                    <button type="button" class="pause">
+                      <img src="/assets/Pause_fill.svg" alt="stop button">
+                    </button>
+                  
+                </div>
+                  
+                <button type="button" class="next">
+                    <img src="/assets/Stop_and_play_fill_reverse.svg" alt="next button">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/main.js"></script>
+</body>
+</html>

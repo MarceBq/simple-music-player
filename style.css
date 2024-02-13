@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/assets/bg.jpg'); 
+    font-family: "Inter", system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilos para la seccion padre */
+.music-player{
+    width: 450px;
+    min-height: 700px;
+    border-radius: 30px;
+    background: hsla(253, 23%, 19%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenedor*/
+.music-player-container{
+    width: 400px;
+    min-height: 650px;
+    border-radius: 30px;
+    /* border: solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/* Contenedores de las musicas */
+.first-music-container{
+    width: 100%;
+}
+
+.second-music-container{
+    width: 100%;
+    display: none;
+}
+
+/* Contenedor de las descripciones */
+.description-music-container{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description-music-container h2{
+    font-size: 1.25rem;
+    color: white;
+}
+
+.description-music-container p{
+    color: #424a4e;
+    margin-top: 2px;
+    font-size: 1rem;
+}
+
+.music-img{
+    width: 400px;
+    border-radius: 30px;
+}
+
+/* ----- Espacio de Botones ----- */
+.interactive-block-container{
+   display: flex;
+   justify-content: space-between;
+   width: 62.5%; 
+}
+
+/* ----- Estilo para los Botones -----  */
+.interactive-block-container button{
+    background: none;
+    border-radius: 50%;
+    border: none;   
+}
+
+.controler-buttons button{
+    background-color: #c93b76; 
+    width: 70px;
+    height: 70px;
+    transition: borderr 0.3s ease
+}
+
+.pause{
+    display: none;
+}
+
+.add{
+    display: block;
+}
+
+.delete{
+    display: none;
+}
+
+/* ----- Estilo para la barra de progreso */
+.progress-music-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;              
+  margin-bottom: 40px;
+}
+
+.time-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar-container{
+  width: 100%; 
+  margin-top: 10px; 
+  height: 5px; 
+  border-radius: 10px;              
+}
+
+/* Estilos personalizados para el input de tipo range */
+input[type="range"] {
+    appearance: none; /* Quitar los estilos predeterminados de Firefox */
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+  
+/* Estilos para hacer el pulgar pequeño y transparente en Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 0px;
+    opacity: 0;  
+}
+  
+ 
+ 
+.current-time, .duration{
+  font-size: 0.925rem;
+  color: #4d5562;   
+}
+
+
+
