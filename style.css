@@ -145,7 +145,7 @@ input[type="range"]::-moz-range-thumb {
  
  
 .current-time, .duration{
-  font-size: 0.925rem;
+  font-size: 0.975rem;
   color: #4d5562;   
 }
 
