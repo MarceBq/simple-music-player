@@ -142,11 +142,13 @@ input[type="range"]::-moz-range-thumb {
     opacity: 0;  
 }
   
- 
- 
 .current-time, .duration{
   font-size: 0.975rem;
   color: #4d5562;   
+}
+
+.progress-bar{
+  background: linear-gradient(to right, #c93b76 0%, #c93b76 0%, #ffffff 0%, #ffffff 100%);
 }
 
 
